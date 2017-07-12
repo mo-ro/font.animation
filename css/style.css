@@ -1,0 +1,122 @@
+.main {
+  background-color: #3B6080;
+}
+
+.top {
+  width: 100%;
+  height: 800px;
+  background-image: url(../img/top2.png);
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-position: center center;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  align-items: center;
+}
+
+.top h1 {
+  color: #fff;
+  font-size: 110px;
+}
+
+.top-span {
+  animation: bound 0.7s line;
+  -webkit-animation: bound 0.7s linear;
+  display: inline-block;
+}
+
+.span1 {
+  color: #0089F6;
+}
+
+.span2 {
+  color: #FF3C0B;
+  animation-delay: 0.15s;
+}
+
+@keyframes bound {
+  0% {
+    transform: scale(1, 1);
+    
+  }
+  /*10% {
+    transform: scale(1, 0.5);
+  }
+  20% {
+    transform: scale(1, 0.2);
+  }
+  30% {
+    transform: scale(1, 0.1);
+  }*/
+  /*40% {
+    transform: scale(1, 0.05);
+  }*/
+  50% {
+    transform: scale(0.0, 0.0);
+  }
+  /*60% {
+    transform: scale(1, 0.05);
+  }
+  70% {
+    transform: scale(1, 0.1);
+  }
+  80% {
+    transform: scale(1, 0.2);
+  }
+  90% {
+    transform: scale(1, 0.5);
+  }*/
+  100% {
+    transform: scale(1, 1);
+  }
+}
+
+.contents {
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  -webkit-flex-wrap: wrap;
+  flex-wrap:         wrap;
+}
+
+.content {
+  width: 300px;
+  /*min-width: 300px;*/
+  height: 300px;
+  margin: 25px auto;
+  background-color: #ddd;
+  display: -webkit-flex;
+  display: -ms-flex;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+  overflow: hidden;
+}
+
+@media (max-width:768px) {
+  .top {
+    height: 500px;
+  }
+
+  .top h1 {
+    font-size: 50px;
+    letter-spacing: 5px;
+  }
+
+  .content {
+    width: 300px;
+    min-width: 300px;
+    height: 300px;
+    margin: 15px auto;
+    background-color: #ddd;
+    display: -webkit-flex;
+    display: -ms-flex;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+
+
+}
